@@ -907,7 +907,7 @@ local rule configure-really ( version ? : options * )
             # version from the path.
             # FIXME: We currently detect both Microsoft Visual Studio 9.0 and
             # 9.0express as 9.0 here.
-            if [ MATCH "(Microsoft Visual Studio 15)" : $(command) ]
+            if [ MATCH "(Microsoft Visual Studio[\/\\]2017)" : $(command) ]
             {
                 version = 15.0 ;
             }
@@ -1624,7 +1624,6 @@ if [ MATCH (--debug-configuration) : [ modules.peek : ARGV ] ]
 .version-11.0-reg = "VisualStudio\\11.0\\Setup\\VC" ;
 .version-12.0-reg = "VisualStudio\\12.0\\Setup\\VC" ;
 .version-14.0-reg = "VisualStudio\\14.0\\Setup\\VC" ;
-.version-15.0-reg = "VisualStudio\\15.0\\Setup\\VC" ;
 
 # Visual C++ Toolkit 2003 does not store its installation path in the registry.
 # The environment variable 'VCToolkitInstallDir' and the default installation

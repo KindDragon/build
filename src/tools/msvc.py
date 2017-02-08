@@ -1293,7 +1293,6 @@ __version_10_0express_reg = "VCExpress\\10.0\\Setup\\VC"
 __version_11_0_reg = "VisualStudio\\11.0\\Setup\\VC"
 __version_12_0_reg = "VisualStudio\\12.0\\Setup\\VC"
 __version_14_0_reg = "VisualStudio\\14.0\\Setup\\VC"
-__version_15_0_reg = "VisualStudio\\15.0\\Setup\\VC"
 
 # Visual C++ Toolkit 2003 does not store its installation path in the registry.
 # The environment variable 'VCToolkitInstallDir' and the default installation
